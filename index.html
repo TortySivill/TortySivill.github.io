@@ -11,7 +11,7 @@
     <title>Torty Sivill</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -36,117 +36,47 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+              <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="research.html">RESEARCH</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="projects.html">PROJECTS</a>
           </ul>
         </div>
       </div>
     </nav>
 
 
+<header>
+  <video class="vid-fluid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="1000px">
+    <source src="img/main_vid.mp4" type="video/mp4">
+  </video>
+</header>
 
+
+     <section id="about">
       <div class="container">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-  
-         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h4 class="text-black"> Towards Ethical Moral Machines </h4>
-            <p> Research project into modeling human moral behaviour in the autonomous vehicle domain </p> 
-             <a href="research.html"> <img src="img/research.png" alt="researchtitle" style="width:80%;"></a>
-
-          </div>   
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h4 class="text-black"> Predicting Disasters </h4>
-            <a href="disaster.html"> <p> Research project into using high level, fuzzy data to predict rare events that affect the industrial financial landscape </p></a>
-          </div>   
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h4 class="text-black"> Swing Good</h4>
-            <p> Cloud based project that uses computer vision to automatically detect problem areas in a golf swing <p>
-            <a href="swinggood.html"> <img src="img/swinggood.png" alt="swinggoodtitle" style="width:80%;"> </a>
-          </div>   
-        </div>
-
-          <br>
-          <br>
-          <br>
-          <br>
-
-         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h4 class="text-black"> Globe Invasion</h4>
-            <p> A 3D, real time, mutiplayer interactive game created for the @Bristol Planetarium </p>
-            <a href="globeinvasion.html"> <img src="img/globeinvasion.png" alt="globeinvasiontitle" style="width:80%;"></a>
-
-          </div>   
-        </div>
-
-          <br>
-          <br>
-          <br>
-          <br>
-
-         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h4 class="text-black"> Lokavore </h4>
-            <p> Concept design for a sustainable approach to online grocery shopping </p>
-             <a href="lokavore.html"> <img src="img/lokavore.png" alt="lokavoretitle" style="width:80%;"></a>
-          </div>   
-        </div>
-
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-3 mx-auto">
+              <img class="img-fluid" src="img/me.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-3 mx-auto">
+              <h4 class="section-heading">About Me</h4>
+              <br>
+              PhD student at the Alan Turing Institute and the University of Bristol
+              <br>
+              <br>
+              <p>Explainable AI  &middot; Integrating Multimodal Data &middot; Decision Support in Health</p>
+            </div>
+          </div>
+         </div>
       </div>
     </section>
-
-    
-    <script>
-        // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    </script>
-
 
     <!-- Footer -->
     <footer>

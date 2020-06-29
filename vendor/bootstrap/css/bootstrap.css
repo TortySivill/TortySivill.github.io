@@ -478,8 +478,14 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+}
+
+.vid-fluid{
+  max-width: 150%;
+  max-height: 150% ;
+  padding-bottom: 200px;
 }
 
 .img-thumbnail {
