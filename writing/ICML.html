@@ -1,0 +1,236 @@
+s    <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Torty Sivill</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Torty Sivill</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../index.html">Home</a>
+          </ul>
+        </div>
+      </div>
+    </nav>      
+        <br>
+        <br>
+        <br> 
+    <div class="container"> 
+      <br>
+      <br>
+      <br>
+      <h2 id="icml-2020">ICML 2020</h2>
+      <h3 id="overall-observations">Overall Observations</h3>
+      <p>I was quite confused by the two separate workshops on interpretable machine learning running at the same time, fair enough one focused on explainable AI and the other referenced human interpretability but with so many papers in the space bemonaing the lack of disctinction between buzzwords, this seems a little bizzare from the ICML panel. As if I have time in my day to sit through 12 hours of &#39;explainable/interpretable&#39; content and then spend another 12 wondering what the differences are. </p>
+      <p> Networking via Zoom is even more frightening than in person, in my opinion. Perhaps an opinion shared by many seeing as the poster sessions were a bit of a flop from what I hear, there were very few people turning up the poster Zoom rooms. This is something that needs to be figured out as we move to an increasingly more virtual academic world.</p>
+      <h3 id="individual-presentation-comments-notes">Individual Presentation Comments/Notes</h3>
+      <h4 id="tutorial-representation-learning-without-labels">Tutorial: Representation Learning Without Labels</h4>
+      <h5 id="s-m-ali-eslami-irina-higgins-danilo-j-rezende">S. M. Ali Eslami, Irina Higgins, Danilo J. Rezende</h5>
+      <p>This workshop was the higlight of ICML for me, I thought it was fantastically pitched, covered a large amount of background and thoroughly interesting. </p>
+      <p>It began with an introduction to Plato&#39;s allegory of a cave, with the idea that representation learning can be described as the mapping between impoverished truth and truth and the key message that <b> representation learning is orthogonal to information content </b></p>
+  
+      <img src="img/ICML_plato_cave.jpg" alt="Plato's allegory of a cave" style="width:100%; float: left; margin-right: 10px;"> </img>
+      <br>
+      <br>
+      <p>Next, the limitations of supervised representation learning were discussed:</p>
+      <ul>
+          <li> <p> Who provides the ground truth labels? </p> </li>
+          <li> <p> Which attributes are chosen for labelling? </p> </li>
+          <li> <p> Can we develop useful representations without labels? </p></li>
+      </ul>
+
+      <p>If we can successfully extract representations without supervision, then </p>
+      <ul>
+          <li> <p> we can learn more effectively when labels are revealed <p> </li>
+          <li> <p> we can learn in situations where labels are impossible to collect <p> </li>
+
+      </ul>
+
+      <p>The tutorial then spend a little time discussing the importance of un-supervised representation learning and the debate that rages on, paying homage to both Hinton&#39;s humble brag &quot;I always knew unsupervised learning was the right thing to do&quot; and Rodeny Brooks&#39; idea that &quot;there is no clear division between perception and reasoning in the real world&quot;. </p>
+      <p>Then there was an overview of the landscape of Representation Learning.</p>
+      <p> <img src="img/ICML_landscape_of_gen_models.png" alt="Landscape of Generative Models" style=" width:100%; float: left; margin-right: 10px;"></img> </p>
+      <br> 
+      <p>with a particular focus on the following:</p>
+      <ul>
+          <li> <p> Disentangled autoencoders (B-VAE): How the use of RNNS and the restriction over inputs allows for the repsentation of semnatically meanfingul concepts and therefore has ties to interpretabilty. More recent work in this space has involved replacing the representation of an observation as a vector with a neaural network or function. </p> </li>
+          <li> <p> Generative Adversarial Networks (GANs): Unlike auto-encoders, these are non-likelihood based and use a discrimnator/contrastive learning to learn representations. Recent work includes SPIRAL [GANIN2018SYNTHESIZING] combines a discrinative, unsupervised approach with re-inforcement learing. </p> </li>
+          <li> <p> Beyond Generative Models </p>
+                  <ul>
+                      <li> <p> Self-supervised learning: The data provides the supervision. Usually this involves using the netwrok to predict some (withheld) part of the data forcing the network to learn semantic representations [ZISSERMAN2018SELF].<p> </li>
+                      <li> <p> Colorization: A research area within self-supervised learning that uses the color of a pixel as the input information signal. In [LARSSON2017COLORIZATION], a colorization network (that can predict the color of a pixel from a grayscale image) is used as a proxy task for learning visual represenatations of an image.</p> </li>
+                      <li> <p> A rerturn to likelihood-based models with attention based frameworks [CHENGENERATIVE2019]</p> </li>
+                  </ul>
+
+      <p></ul></p>
+      <p>The tutorial then discussed in greater the detail the mechanics of a generative models, specifically discussing the problem of selecting a divergence function that works to minimise the difference between the empirical probability density and the estimated probability density function. The difference between GANs and VAEs was also discussed and presented as the difference in ways that they define the bounds of loss between desnsity functions. Energy based models were also briefly discussed, focusing on how, the fact that they work to minimise the KL-divergence between density functions, there is no obvious way of smampling from the model such taht many different methods have been recently proposed including Hamiltonian MOnte Carlo, Score matching and Langevin sampling [LECUNENERGY2006].</p>
+      <p>The final part of the tutorial focues on the manifold hypothesis:
+          <b> &quot;High dimensional data lue on low-dimensional manifolds embedded in the high dimensional space&quot;</b></p>
+      <h5 id="ideas-for-taking-forward-into-my-own-research">Ideas for taking forward into my own research</h5>
+      <p> &quot;If representation learning was an apple pie, how would it be divided up between modalities?&quot;&quot; An interesting question from the Q&amp;A, the answer: &quot;90% text, 9.5% images and 0.5% for the rest&quot;.
+       How do we perform representation learning for other forms of data, specifically, longitudinal data?</p>
+      <p>&quot;Finding the right low dimensional manifold is ciritical for high dimensional data&quot;. How can this idea be linked back to the research I am doing lookking at how a better undertanding of the data distribution can aid posy-hoc interepretability methods? Can this be linked to kernel methods and kernel distances? </p>
+      <h4 id="paper-problems-with-shapley-value-based-explanations-as-feature-importance-measures">Paper: Problems with Shapley value based explanations as feature importance measures</h4>
+      <h5 id="kumar-i-e-venkatasubramanian-s-scheidegger-c-friedler-s-">Kumar, I. E., Venkatasubramanian, S., Scheidegger, C., &amp; Friedler, S.</h5>
+      <p>Define Shapley based feature importance measures as the pipeline:
+          calculation -> Interpretation -> Action</p>
+      <p>Authors argue that Shapley based feature importances are difficult to be interpreted and that while these feature importances may be optimal for game theory they have not been created with any specific task in mind and are therefore not optimal for that specific task. </p>
+      <p>Paper focuses on two central problems of Shapley based explanations:</p>
+      <ul>
+          <li> <p> Mathematical problems: These include the difference between conditional and interventional distributions and the resulting issues as treating these as equivalent and the problems of additive feature importances. </p> </li>
+          <li> <p> Human based problems: The authors highlight the importance of understanding <em>why</em> the explanation is needed, which could be for either, &#39;just because&#39;, &#39;user action&#39;, &#39;normative action&#39;. THey take further issue with the use of Shapley values as contrastive explanations and the conceptual problems associated with averaging feature importances. </p> </li>
+      </ul>
+
+      <h4 id="paper-self-supervised-training-and-selection-for-disenetangling-gans">Paper: Self-supervised training and selection for disenetangling GANs</h4>
+      <h5 id="lin-z-thekumparampil-k-k-fanti-g-oh-s">Lin, Z., Thekumparampil, K. K., Fanti, G., &amp; Oh, S</h5>
+      <p>Paper addresses two key areas:</p>
+      <ul> 
+          <li><p> GANs are bad at disentanglement compared to VAEs </p> </li>
+          <li> <p> How to do unspervised model slection </p> </li>
+      </ul>
+
+      <p>Disentangled GANS: Authors suggest using a contrastive regularizer to assess the quality of the disentangled representation. Add a contrastive regluariser to the INFOGAN model and report improvements. The idea behind the  contrastive regulariser is two generate two images from two different vectors of latent codes but fix a particular latent code &amp;c_{i}$ to be shared between both images. The discriminator then tries to determine which latent code was shared. 
+      Train the INFOGAN with the contrastive regulariser as we want to train a generator to optimise the latent factors that are easy to be separated by the regulariser. </p>
+      <p>Model selection: How to choose which disentangled model is the best. The idea behind the paper is that well-disentangled models are close to the (unknown) ground truth model. Authors measure the distance between each model and all other learned models. Assign an overall score to each model that is a measure for how &#39;close-by&#39; all other models are. The model with the highest centrality score is selected.</p>
+      <h4 id="paper-understanding-contrastive-representation-learning-through-geometry-on-the-hyphersphere">Paper: Understanding contrastive representation learning through geometry on the Hyphersphere</h4>
+      <h5 id="wang-t-isola-p-">Wang, T., &amp; Isola, P.</h5>
+      <p>Many works map data to the unit hyphersphere representation space. Fixed norm feature vectors can improve training stability by making well clustered sets linearly seperable.
+      Authors question, what makes a good representation?</p>
+      <ul> 
+          <li> <p> Alignment: Should be invariant to random noise </p> </li>
+          <li> <p> Uniformity: Preserve as much information as possible </p> </li>
+      </ul>
+     
+      <p> The authors define alignment as the idea that similar samples have similar features whereas they define uniformity as the idea that we should want to preserve as much information as possible (use the Uniform distribution). Authors show that using the contrastive loss as a performance metric pulls positive pairs (of observations) together and pushes negatives apart thus intuitively seems to be optimising for alignment and uniformity. The authors show this empirically. </p>
+
+      <h4> Invited Talk : Human and machine learning for assistive autonomy </h4>
+      <h5> Brenna Argall </h5>
+
+      <p> Key take away points: </p>
+      <ul>
+          <li> <p> Important to question whether the technology should <em>trust the human</em>. Interesting point regarding quality of input signal </p> </li>
+          <li> <p> It is critical that assistive autonomy for spinal cord injury test subjects is <em>customisable</em> </p> </li>
+          <li> <p> Difference between short-term and long-term adaptation </p> </li>
+      </ul>
+
+      <h4 id="paper-learnable-group-transform-for-time-series">Paper: Learnable group transform for time-series</h4>
+      <h5 id="cosentino-r-aazhang-b-">Cosentino, R., &amp; Aazhang, B.</h5>
+      <p>Presents the common problems of working with time series data as:</p>
+      <ul> 
+          <li> <p> High dimensional signals </p> </li>
+          <li> <p> Large intra-class variability </p> </li>
+          <li> <p> Noise </p>  </li>
+      </ul>
+
+      <p>Gives an overview of approaches that map time-series data into the time-frequency plane to deal with the above problems:</p>
+      <ul> 
+          <li> <p> Wavelet transfrom </p> </li>
+          <li> <p> Short-time Fourier transfrom </p> </li>
+          <li> <p> Deep scattering network </p> </li>
+      </ul>
+
+      Authors claim that the associated problems of hand crafted time-frequency representation are:
+
+      <ul>
+          <li> <p> Often not aligned with research task </p> </li>
+          <li> <p> Requires expert knowledge </p> </li>
+          <li> <p> Requires cross validation of parameters (e.g. size of wavelet) </p> </li>
+      </ul>
+
+      <p>Authors propose a data driven pipeline where this process is automated.</p>
+      <h4 id="paper-learning-de-biased-representations-with-biased-representations">Paper: Learning de-biased representations with biased representations</h4>
+      <h5 id="bahng-h-chun-s-yun-s-choo-j-oh-s-j-">Bahng, H., Chun, S., Yun, S., Choo, J., &amp; Oh, S. J.</h5>
+      <p>The bias in data leads to bias in models that use &#39;shortcuts&#39; to perform a prediction task. Furthermore, most models assume that the training and test distribution are identical.
+      Often, it is impossible for humans to identify every bias that exists in the dataset which makes it impossible to build completely unbiased data and associated models. The approach of the paper is to train a selection of intentionally biased models. In forcing the models to be biased in a different ways, this allows the final model to be less biased.</p>
+      <p>The main ideas of the paper are:</p>
+      <uk>
+          <li> <p> How to characterise bias: paper uses small receptive fields that overfit to certain local cues (e.g. local texture) </p> </li>
+          <li><p> How to encode &#39;be different&#39;: paper achieves this through staticstical independence (witht he Hilbert-Schmidt independence criterion) capturing the idea that the unbiased model &#39;runs away&#39; form the biased models. </p></li>
+      </uk>
+
+      <h4 id="paper-weakly-supervised-disentanglement-without-compromises">Paper: Weakly-supervised disentanglement without compromises</h4>
+      <h5 id="locatello-f-poole-b-r-tsch-g-sch-lkopf-b-bachem-o-tschannen-m-">Locatello, F., Poole, B., Rätsch, G., Schölkopf, B., Bachem, O., &amp; Tschannen, M.</h5>
+      <p>Disentanglement is the task of learning a function that maps a high dimensional observation to a low dimensional representation. It relies on the assumption that observations are not actually high dimensional but a manifestation of low dimensional factors. </p>
+      <p>Authors present the theoretical result from the literature that the unsupervised learning of disentangled representation for arbitrary data is impossible. The authors present the practical observation from the literature that very little and imprecise explicit supervision seems to be enough to learn disentangled representations in practice. </p>
+      <p>The paper setup: Go from i.i.d to non-i.i.d observations by assuming access ot pairs of observations that share an unknown number of latent generating factors. This work is inspired by non leinear independent component analysis and develops the idea that &quot;All the plausible aggregate posteriors are re-parametrisation of the true posterior up to a co-ordinate-wise change of variables and index permutations&quot;.</p>
+      <p>From this, the authors are able to do model selection without directly observing the factors of variatio and are able to extract disentangled representations.</p>
+      <h4 id="workshop-extending-xai-beyond-deep-models-and-classifiers">Workshop: Extending XAI beyond deep models and classifiers</h4>
+      <h5 id="workshop-talk-explaining-tree-based-machine-learning-models-sm-lundberg-">Workshop Talk: Explaining tree based machine learning models (SM Lundberg)</h5>
+      <p>Starts by asking the question, &quot;are interpretable models really as interpretable as we may thimk&quot;, focuses on decision trees. How do we decide feature importance from a decision tree?</p>
+      <ul> 
+          <li> <p> See if a feature is on the decision path </p> </li>
+          <li> <p> Check if feature is close to the root </p> </li>
+          <li> <p> See how different the expected value of the left subtree is from the right subtree </p> </li>
+      </ul>
+
+      <p>Highlights the difference between the functional and representational form of a model - lots of features depend on the structure of the tree. There are also consistency problems with expected value differences. Shapley values are more reliable but are exponentially complex to compute. Lundberg argues that for decision trees, we can compute Shapley values more efficiently. Lundberg then shows how we could go about reoresenting the global model structure with (a matrix of) local fetaure importances. </p>
+      <p>Lundberg asks the question, &quot;why cant we just use a simple model?&quot; and argues that with a simple model, we. put a high bias on the data having a linear relationship. If the data does not have a linear relationship then the resulting model is difficult to interpret. He then experiments with the idea that as we increase the non linearity of data and attempt to model linearly, how much weight is given to features we know are not responsible for the model. </p>
+      <h5 id="workshop-talk-interpreting-and-leveraging-latent-semantics-in-gans-yujun-shen-">Workshop Talk: Interpreting and leveraging latent semantics in GANs (Yujun Shen)</h5>
+      <p>Identifies two different types of latent factors in deep generative representations: latent units (e.g. convolution filters) and latent space (e.g. radnomly sampled vectors).</p>
+      <p>Questions how we can identify causality in latent space. Associated paper proposes to do this by aligning the latent space with the attribute space. The basic idea is to randomly sample latent vectors and use these to generate images from which, the authors use an off-the-shelf classifier to get a label for these generated images in the attribute space. The authors then use these labels to train the attribute classifier in latent space. </p>
+      <p>Identifies that semantic hierarchy emerges in deep generative representation for scene synthesis and images are generated in a similar way to humans. Furthermore, different semantic meaning can be assigned to different layers. </p>
+      <h3 id="references">References</h3>
+      <ul>
+      <li>[GANIN2018SYNTHESIZING] Ganin, Yaroslav, et al. &quot;Synthesizing programs for images using reinforced adversarial learning.&quot; arXiv preprint arXiv:1804.01118 (2018).</li>
+      <li>[LARSSON2017COLORIZATION] Larsson, Gustav, Michael Maire, and Gregory Shakhnarovich. &quot;Colorization as a proxy task for visual understanding.&quot; Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.</li>
+      <li>[ZISSERMAN2018SELF] Zisserman, Andrew, Self Supervised Learning, ICML, 2018 </li>
+      <li>[LECUNENERGY2006] LeCun, Yann, et al. &quot;A tutorial on energy-based learning.&quot; Predicting structured data 1.0 (2006). </li>
+      <li>[CHENGENERATIVE2019] Chen, Mark, et al. &quot;Generative Pretraining from Pixels.&quot; 2019 </li>
+      <li>[KUMAR2020PROBLEMS] Kumar, I. Elizabeth, et al. &quot;Problems with Shapley-value-based explanations as feature importance measures.&quot; arXiv preprint arXiv:2002.11097 (2020). </li>
+      <li>[LIN2020INFO] Lin, Zinan, et al. &quot;InfoGAN-CR and ModelCentrality: Self-supervised Model Training and Selection for Disentangling GANs.&quot; </li>
+      <Li>[WANG2020CONTRASTIVE] Wang, Tongzhou, and Phillip Isola. &quot;Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere.&quot; arXiv preprint arXiv:2005.10242 (2020). </Li>
+      <li>[COSENTINO2019LEARNABLE] Cosentino, Romain, and Behnaam Aazhang. &quot;Learnable Group Transform For Time-Series.&quot; (2019). </li>
+      <li>[BANHNG2019DEBIASED] Bahng, Hyojin, et al. &quot;Learning De-biased Representations with Biased Representations.&quot; arXiv preprint arXiv:1910.02806 (2019). </li>
+      <li>[LOCATELLO2010WEAKLY] Locatello, Francesco, et al. &quot;Weakly-Supervised Disentanglement Without Compromises.&quot; arXiv preprint arXiv:2002.02886 (2020). </li>
+      <li>SHEN2020INTER] Shen, Yujun, et al. &quot;InterFaceGAN: Interpreting the Disentangled Face Representation Learned by GANs.&quot; arXiv preprint arXiv:2005.09635 (2020). </li>
+      </ul>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.js"></script>
+
+
+  </body>
+
+</html>
+
+
+

@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Torty Sivill</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Torty Sivill</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../index.html">Home</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+      <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+  
+
+         <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h6 class="text-black"> Swing Good </h6>
+            <p> SwingGood is a free online service providing an archival of golf swing clips and object-recognition based, personalised swing feedback, built using Amazon Web Services. </p>
+            <br>
+
+            <img src="img/swingphoto.png" alt="swingphoto" style="width:60%;"></img>
+
+            <br><br><br>
+
+            <p> Swing technique is a fundamental part of golf, separating amateurs from professionals. The correct alignment of the shoulders and knees is crucial in determining accuracy, however, body misalignment is difficult to spot with the naked eye. The SwingGood application provides users with an edited version of their uploaded video which overlays track lines over the original. The track lines follow the movement of the shoulders and knees during the swing, allowing the user to see where their swing is misaligned. SwingGood uses TensorFlow for object recognition to track movement of the shoulders and knees.<p> <br>
+
+           <p> SwingGood is still in the early stages of development. Currently implemented are the following features: </p>
+            <ul>
+              <li> <p> Users can create an account and sign in to their personal profile. </p> </li>
+              <li> <p> Signed in users can upload a short mp4 of their golf swing. </p> </li>
+              <li> <p> Users will receive an edited version of their uploaded clip, available to view in their user portal. </p> </li>
+              <li> <p> Signed in users can review both the raw and edited clip as both videos are stored by the service. </p> </li>
+              <li> <p> Users are sent an email notification when their uploaded clip has been analysed by SwingGood and is ready to view in their user portal. </p></li>
+            </ul>
+
+
+            <p> Amazon Web Services (AWS) is a cloud service provider most commonly used by developers looking for an IaaS solution and has been used by numerous companies including Air B&B and Autodesk. Below shows a system graphic of the SwingGood system architecture and AWS. components </p>
+
+             <img src="img/awsdiag.png" alt="swingphoto" style="width:60%;"> </img>
+
+             <p>The image processing component of the application requires a program that is able to perform object recognition on a golf swing clip to recognize the shoulder and knees, overlay calculated track lines based on recognized golfing technique and output a new edited video. The contorted form of the human body during a golf swing requires the object recognition component of this functionality to be sophisticated. The application is coded in the Python programming language. I initially experimented with the OpenCV library for object recognition, namely Haar feature cascades. However, after much experimentation this method alone proved insufficient to consistently recognize the human body in motion, provoking the use of a pre-implemented open source object recognition module published by the head of data science at Idealo. This module uses a combination of Google’s TensorFlow and OpenCV to provide highly advanced object recognition and tracking. SwingGood uses this module as its basis for its functionality. We also rewrite the module to take an mp4 clip as input, output an mp4 clip on termination and include an algorithm to calculate the overlayed track lines based on the angle of the shoulders and knees inside the bounding box provided by the original module.</p>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cMK27eVKJlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="https://github.com/TortySivill/SwingGood"> <i class="fa fa-3x fa-code text-black mb-3 sr-icons"></i></a>
+
+          </div>   
+        </div>
+
+      
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.js"></script>
+
+   
+
+  </body>
+
+</html>
