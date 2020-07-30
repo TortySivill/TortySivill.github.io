@@ -7838,6 +7838,12 @@ button.bg-dark:focus {
   margin-right: auto !important;
 }
 
+.mx-auto-supervision {
+  margin-right: auto !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .mb-auto,
 .my-auto {
   margin-bottom: auto !important;
