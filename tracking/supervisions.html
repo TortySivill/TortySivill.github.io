@@ -60,8 +60,67 @@
 <h1 id="phd-tracking">PhD Tracking</h1>
 <br>
 <br>
-<h2 id="upcoming-supervision-">Upcoming Supervision: 04/08/2020</h2>
+<h2 id="upcoming-supervision-">Upcoming Supervision: 03/12/2020</h2>
 <h5>Meeting Agenda: </h5>
+
+<h6> Admin:
+<ul>
+    <li> First Year Review - any progress? </li>
+</ul>
+
+
+<h5> Since Last Meeting </h5>
+<ul>
+    <li> Written Entropy Paper: Discuss </li>
+        <ul>
+            <li> Is there enough content - do I need more datasets</li>
+            <li> Not happy with how descriptive the discussion is - need to develop </li>
+            <li> More of a link to interpretability? Shapelets & how they can be used for this </li>
+            <li> Have included description of existing entropy based features/accuracy, precision etc does it need this? </li>
+            <li> Need to tidy up code and then pubsh this to Github </li>
+            <li> Venue? </li>
+        </ul>
+    <li> Algorithmic Recourse - quite exciting for me as it unites the cuasal perspective with the post-hoc perspective  </li>
+    <li> Interested in the idea between cost/difference - finding a local example that represents the "closest possible world" - looking at the geometry of the data, particularly for generative models, should we measure distances in the latent space? Looking  at Fisher vectors which consider the  underlying probability distribution when looking at distances - links to time series representation - links to Riemannian distances and to entropy. </li>
+    <li> Interested in the evaluation of XAI - looking at a technique from Slack et al. who use adversarial attack to fool lime and SHAP - exploits weaknesses in the sampling - "identifiably out of distribution" - experimenting with different generative models and how well they can overcome sampling problems </li>
+    <li> Interested in the idea: "a good explanation is one that allows you to predict the behaviour of a system" to construct a new evaluation metric that uses explanations to build a model. </li>
+    <li> Still looking at FOIL and decision boundaries how to use "most influential" training data to learn general rules </li>
+    <li> Still interested in different causal mechanisms - want to experiment with these within Karimi et al. framework to see if these mechanisms drastically change the explanation. </li>
+</ul>
+<br>
+<br>
+
+
+<h2 id="previous-supervisions">Previous Supervisions</h2>
+<br>
+<br>
+
+
+<h3 id="upcoming-supervision-">Supervision 01/10/2020</h2>
+<h5>Meeting Agenda: </h5>
+
+<ul>
+    <li> First Year Review - any progress? </li>
+</ul>
+
+
+<h5> Since Last Meeting </h5>
+<ul>
+    <li> Presented at conference - won a prize lol </li>
+    <li> Took part in Data Study Group (as facilitator) for the whole of September </li>
+    <li> Set up an XAI interest group for students, reaching across Turing and Bristol </li>
+    <ul>
+        <li> Entropy Project - quite interesting inital results trying to find a way of addressing the independent component problem with approximate entropy by trying to fuse svd entropy with approximate entropy using the matrix profile. Need to spend time trying to link it back to the structure of the time series - incoporating expert knowledge into feature engineering. </li>
+        <li> Incorporating Generative Ideas into LIME. Interesting results using GMM to model trainind data distribution and then Fisher Vectors to get similarity scores between test point and samples in feature space. Similar to MeLIME (paper Peter put in the Slack channel), need to look at ways to to evaluate explanations other than robustness </li>
+        <li> Learning interpretable logical rules - FOIL algorithm - trying to optimise this by using 'influential training points'</li>
+    </ul>
+<br>
+
+
+<br>
+<br>
+
+<h3> Supervision 04/08/2020 </h3>
 
 <br>
 <p>Admin:</p>
@@ -115,14 +174,6 @@
         </ul>
     </li>
 </ul>
-
-<br>
-<br>
-
-
-<h2 id="previous-supervisions">Previous Supervisions</h2>
-<br>
-<br>
 <h3 id="supervision-11-06-2020">Supervision 11/06/2020</h3>
 <h4 id="discussion-points">Discussion Points</h4>
 <p>What I have been working on: Extracting Meaning from Biomedical Data</p>
