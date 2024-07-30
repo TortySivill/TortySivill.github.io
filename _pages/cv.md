@@ -53,19 +53,7 @@ Logic Programming”.
   * Used JavaScript/HTML5/CSS alongside the Cordova framework to create hybrid application for a national squash league
 
 
-Achievements
-======
 
-* First author publications at top academic venues (AISTATS, Frontiers)
-* Selected from large pool of candidates to be awarded the Alan Turing Institute PhD Funding
-* Awarded the prize for the best MEng Project by the University of Bristol
-* Invited to deliver opening talk at the Jean Golding Data Showcase
-* Invited to present at LV, Bristol Faculty of Law, University of Nottingham
-* Selected Panelist at AI UK 2023
-* Awarded G-research PhD Scholarship
-* Co-host the Turing Institute’s internal and external podcast
-* Added to the register of AI Experts at the University of Bristol Communications Office
-  
 Skills
 ======
 * Core Skills
