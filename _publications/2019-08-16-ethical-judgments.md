@@ -1,3 +1,4 @@
+---
 title: "Ethical and statistical considerations in models of moral judgments"
 collection: publications
 permalink: /publication/2019-08-16-ethical-judgments
@@ -6,5 +7,5 @@ date: 2019-08-16
 venue: 'Frontiers'
 paperurl: 'https://pubmed.ncbi.nlm.nih.gov/33501055/'
 citation: 'Sivill, T. (2019). Ethical and statistical considerations in models of moral judgments. Frontiers in Robotics and AI, 6, 449751.'
-
+---
 
