@@ -1,4 +1,3 @@
-SIVILL, T. (2023). Towards Explainable Time Series---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -28,8 +27,7 @@ to large data set (over 200 million transactions). Experience in SQL
 * MEng in Computer Science, University of Bristol, 2018
   * Units studied include: “Machine Learning”, “Artificial Intelligence”, “Web Technologies”,
 “Cryptography”, “Sustainable Technology”, “Systems Security”
-  * Published final year project explored ways of modelling human behaviour using Bayesian inference
-and PyStan
+  * Published final year project explored ways of modelling human behaviour using Bayesian inference and PyStan
 
 Work experience
 ======
@@ -55,7 +53,7 @@ Logic Programming”.
   * Used JavaScript/HTML5/CSS alongside the Cordova framework to create hybrid application for a national squash league
 
 
-Achivements
+Achievements
 ======
 
 * First author publications at top academic venues (AISTATS, Frontiers)
