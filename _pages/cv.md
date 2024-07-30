@@ -22,9 +22,9 @@ processes to time series
   * Extensive knowledge of game theory (the Shapley value and coalitional games), causal inference (Pearl’s do
 calculus), probabilistic programming paradigms
   * (Developed open source explainability software tools which accompany research articles and have been forked
-multiple times
- * Led project using transactional data to measure period poverty in England. Applied machine learning pipeline
-to large data set (over 200 million transactions). Experience in SQL
+  multiple times
+  * Led project using transactional data to measure period poverty in England. Applied machine learning pipeline
+  to large data set (over 200 million transactions). Experience in SQL
 * MEng in Computer Science, University of Bristol, 2018
   * Units studied include: “Machine Learning”, “Artificial Intelligence”, “Web Technologies”,
 “Cryptography”, “Sustainable Technology”, “Systems Security”
@@ -32,25 +32,21 @@ to large data set (over 200 million transactions). Experience in SQL
 
 Work experience
 ======
-* September 2023 - Now: Cambridge Spark 
-  * Tutor
+* September 2023 - Now : Tutor : Cambridge Spark 
   * Deliver AI educational material 
 
-* September 2019 - July 2023: The University of Bristol
-  * Teaching Assistant 
+* September 2019 - July 2023 Teaching Assistant: The University of Bristol
+  * 
   * Led lab and seminar sessions on the following units: “Artificial Intelligence”, “Symbols Patterns and
-Symbols”, “Introduction to Computer Science”.
-
+  Symbols”, “Introduction to Computer Science”.
   * Designed and developed the software package and coursework for the unit “Artificial Intelligence with
-Logic Programming”.
+  Logic Programming”.
 
-*  June - August 2017: lloyds Banking Group
-  * DevOps Intern
+*  June - August 2017 : DevOps Intern : Lloyds Banking Group
   * Experienced DevOps tooling: Git/Gerrit, Jenkins, Selenium, IBM Cirrus Technologies.
   * Led a project integrating DevOps methodologies with wider IT team and presented to the head of function on the benefits of DevOps adoption.
 
-* Sep 2016 - May 2017 : Hewlett Packard
-  * Developer
+* Sep 2016 - May 2017 : Developer : Hewlett Packard
   * Used JavaScript/HTML5/CSS alongside the Cordova framework to create hybrid application for a national squash league
 
 
