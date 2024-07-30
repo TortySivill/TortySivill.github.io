@@ -36,7 +36,7 @@ author:
 
 
   # Social media
-  linkedin         : # Torty Sivill
+  linkedin         : "https://www.linkedin.com/in/torty-sivill-66905b129/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk"
 
 
 # Site Settings
@@ -169,7 +169,7 @@ collections:
     output: false
     permalink: /:collection/:path/
   publications:
-    output: false
+    output: true
     permalink: /:collection/:path/
   portfolio:
     output: false

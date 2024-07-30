@@ -5,7 +5,7 @@ permalink: /publication/2019-08-16-ethical-judgments
 excerpt: 'This work extends recent advancements in computational models of moral decision making by using mathematical and philosophical theory to suggest adaptations to state of the art.'
 date: 2019-08-16
 venue: 'Frontiers'
-paperurl: 'https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00039/full?field&journalName=Frontiers_in_Robotics_and_AI&id=449751&fbclid=IwAR3Q6aMATdNU6qnkqiQWa7vR7-wwD050dY2XIf31R9VHI-AEOhPs2v4JYEA'
+paperurl: 'https://pubmed.ncbi.nlm.nih.gov/33501055/'
 citation: 'Sivill, T. (2019). Ethical and statistical considerations in models of moral judgments. Frontiers in Robotics and AI, 6, 449751.'
 ---
 

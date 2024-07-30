@@ -8,5 +8,5 @@ redirect_from:
 ---
 
 
-I have recently completed a PhD in Explainable AI. Currently in Indonesia finding myself. CTO of Decima2. I want to build Trustworthy AI. 
+I have recently completed a PhD in Explainable AI. I am the Co-founder and CSO of Decima2. I want to build Trustworthy AI. 
 
