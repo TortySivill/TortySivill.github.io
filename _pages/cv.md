@@ -36,13 +36,12 @@ Work experience
   * Deliver AI educational material 
 
 * September 2019 - July 2023 Teaching Assistant: The University of Bristol
-  * 
   * Led lab and seminar sessions on the following units: “Artificial Intelligence”, “Symbols Patterns and
   Symbols”, “Introduction to Computer Science”.
   * Designed and developed the software package and coursework for the unit “Artificial Intelligence with
   Logic Programming”.
 
-*  June - August 2017 : DevOps Intern : Lloyds Banking Group
+* June - August 2017 : DevOps Intern : Lloyds Banking Group
   * Experienced DevOps tooling: Git/Gerrit, Jenkins, Selenium, IBM Cirrus Technologies.
   * Led a project integrating DevOps methodologies with wider IT team and presented to the head of function on the benefits of DevOps adoption.
 
