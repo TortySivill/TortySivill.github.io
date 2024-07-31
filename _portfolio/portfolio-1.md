@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Causal Learning Diagrams"
 excerpt: "Interactive visual learning aids for causal inference <br/><img src='/images/causal.png'>"
 collection: portfolio
 ---
