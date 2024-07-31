@@ -30,6 +30,20 @@ calculus), probabilistic programming paradigms
 “Cryptography”, “Sustainable Technology”, “Systems Security”
   * Published final year project explored ways of modelling human behaviour using Bayesian inference and PyStan
 
+
+Achievements
+======
+
+* First author publications at top academic venues (AISTATS, Frontiers)
+* Selected from large pool of candidates to be awarded the Alan Turing Institute PhD Funding
+* Awarded the prize for the best MEng Project by the University of Bristol
+* Invited to deliver opening talk at the Jean Golding Data Showcase
+* Invited to present at LV, Bristol Faculty of Law, University of Nottingham
+* Selected Panelist at AI UK 2023
+* Awarded G-research PhD Scholarship
+* Co-host the Turing Institute’s internal and external podcast
+* Added to the register of AI Experts at the University of Bristol Communications Office
+
 Work experience
 ======
 * September 2023 - Now : Tutor : Cambridge Spark 
